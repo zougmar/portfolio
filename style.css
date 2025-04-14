@@ -174,4 +174,27 @@
     80% { transform: translate(2px, 1px); }
     100% { transform: translate(1px, -1px); }
   }
+  .icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #ffffff;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .icon-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #fd7e14;
+    background-color: #fd7e14;
+    border-color: #fd7e14;
+    color: #fff;
+  }
+  .top-bar i {
+    color: #fd7e14;
+  }
   
