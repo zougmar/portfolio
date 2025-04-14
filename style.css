@@ -197,4 +197,188 @@
   .top-bar i {
     color: #fd7e14;
   }
+/* whatsapp floating button */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+  } */
+  .whatsapp-float:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.1);
+  }
+  /* login form */
+  .login-box {
+    background-color: #161b22;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    color: #fd7e14;
+    margin-bottom: 1rem;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #fd7e14;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.auth-card {
+  background-color: #161b22;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.auth-card h2 {
+  color: #fd7e14;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.auth-card button {
+  background-color: #fd7e14;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.auth-card button:hover {
+  background-color: #e56b00;
+}
+
+.error-text {
+  color: #ff4e4e;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.dashboard {
+  padding: 4rem;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+  }
+  
+  .auth-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .auth-card {
+    background-color: #161b22;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+  
+  .auth-card h2 {
+    color: #fd7e14;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .auth-card input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .auth-card button {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .auth-card button:hover {
+    background-color: #e56b00;
+  }
+  
+  .error-text {
+    color: #ff4e4e;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .dashboard {
+    padding: 4rem;
+  }
   
