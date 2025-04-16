@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Dashboard | Omar Zouglah</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://kit.fontawesome.com/a2e0f1f8dd.js" crossorigin="anonymous"></script>
+</head>
+<body class="dashboard-page">
+  <div class="sidebar">
+    <h2><i class="fas fa-box"></i> Dashboard</h2>
+    <ul>
+      <li><a href="#"><i class="fas fa-boxes"></i> Products</a></li>
+      <li><a href="#"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+    </ul>
+    <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Welcome, Omar 👋</h1>
+      <p>Manage your products below</p>
+    </header>
+
+    <section class="product-section">
+      <div class="product-header">
+        <h2>Product List</h2>
+        <div style="display: flex; gap: 10px;">
+          <button id="addProductBtn"><i class="fas fa-plus"></i> Add Product</button>
+          <button id="scanQRBtn"><i class="fas fa-qrcode"></i> Scan QR Code</button>
+        </div>
+      </div>
+      
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price (MAD)</th>
+            <th>Category</th>
+            <th>Actions</th>
+            <th>QR</th>
+          </tr>
+        </thead>
+        
+        <tbody id="productTableBody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- Add Product Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Add New Product</h3>
+      <form id="productForm">
+        <input type="text" id="productName" placeholder="Product Name" required />
+        <input type="number" id="productPrice" placeholder="Price in MAD" required />
+        <input type="text" id="productCategory" placeholder="Category" required />
+        <button type="submit">Save Product</button>
+      </form>
+    </div>
+  </div>
+  <div id="scannerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeScanner">&times;</span>
+      <h3>Scan QR Code</h3>
+      <div id="reader" style="width: 250px;"></div>
+    </div>
+  </div>
+  
+
+  <script src="dashboard.js"></script>
+  <!-- QR Code Generator -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+
+<!-- QR Code Scanner -->
+<script src="https://unpkg.com/html5-qrcode"></script>
+  <!-- QR Scanner Modal -->
+<div id="qrScannerModal" class="modal">
+  <div class="modal-content" style="width: 90%; max-width: 400px;">
+    <span class="close" id="closeQrScanner">&times;</span>
+    <h3>Scan QR Code</h3>
+    <div id="qr-reader" style="width: 100%;"></div>
+  </div>
+</div>
+
+<!-- QR Code Scanner Script -->
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+</body>
+</html>
